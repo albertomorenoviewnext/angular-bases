@@ -1,0 +1,11 @@
+footer {
+  padding: 1%;
+  background-color: #7092BE;
+}
+
+footer h2{
+  display: flex;
+  justify-content: left;
+  color: white;
+  font-size: 17px;
+}

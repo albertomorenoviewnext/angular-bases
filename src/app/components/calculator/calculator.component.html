@@ -1,0 +1,101 @@
+<div class="contenedorPrincipal row">
+  <main class="calculadora col-9">
+      <div class="resultado">
+          <input type="text" id="display" value="{{pantalla}}">
+      </div>
+      <div class="botones">
+          <div class="row">
+              <div class="numeros col-9">
+                  <div class="col-3 numero">
+                      <button id="num1" type="button" class="btn btn-warning" (click)="num('1')">1</button>
+                  </div>
+                  <div class="col-3 numero">
+                      <button id="num2" type="button" class="btn btn-warning" (click)="num('2')">2</button>
+                  </div>
+                  <div class="col-3 numero">
+                      <button id="num3" type="button" class="btn btn-warning" (click)="num('3')">3</button>
+                  </div>
+              </div>
+              <div class="col-3 operadores">
+                  <button id="op+" type="button" class="btn btn-info" (click)="op('+')">+</button>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="numeros col-9">
+                  <div class="col-3 numero">
+                      <button id="num4" type="button" class="btn btn-warning" (click)="num('4')">4</button>
+                  </div>
+                  <div class="col-3 numero">
+                      <button id="num5" type="button" class="btn btn-warning" (click)="num('5')">5</button>
+                  </div>
+                  <div class="col-3 numero">
+                      <button id="num6" type="button" class="btn btn-warning" (click)="num('6')">6</button>
+                  </div>
+              </div>
+              <div class="col-3 operadores">
+                  <button id="op-" type="button" class="btn btn-info" (click)="op('-')">-</button>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="numeros col-9">
+                  <div class="col-3 numero">
+                      <button id="num7" type="button" class="btn btn-warning" (click)="num('7')">7</button>
+                  </div>
+                  <div class="col-3 numero">
+                      <button id="num8" type="button" class="btn btn-warning" (click)="num('8')">8</button>
+                  </div>
+                  <div class="col-3 numero">
+                      <button id="num9" type="button" class="btn btn-warning" (click)="num('9')">9</button>
+                  </div>
+              </div>
+              <div class="col-3 operadores">
+                  <button id="op*" type="button" class="btn btn-info" (click)="op('*')">*</button>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="numeros col-9">
+                  <div class="col-3 coma">
+                      <button id="op," type="button" class="btn btn-light" (click)="coma()">,</button>
+                  </div>
+                  <div class="col-3 numero">
+                      <button id="num0" type="button" class="btn btn-warning" (click)="num('0')">0</button>
+                  </div>
+                  <div class="col-3 C">
+                      <button id="opC" type="button" class="btn btn-danger" (click)="c()">C</button>
+                  </div>
+              </div>
+              <div class="col-3 operadores">
+                  <button id="op/" type="button" class="btn btn-info" (click)="op('/')">/</button>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-12 igual">
+                  <button id="op=" type="button" class="btn btn-success" (click)="igual()">=</button>
+              </div>
+          </div>
+      </div>
+  </main>
+
+
+  <div class="contenedorHist col-3">
+      <div class="row">
+          <div class="cabeceraHistorial col-12">
+              <div>
+                  <h4>Registro/Historial</h4>
+              </div>
+              <div>
+                  <button id="opclean" type="button" class="btn btn-success" (click)="limpiar()">Limpiar</button>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="contenedorRegistro col-12">
+              <div id="registro" class="registro"></div>
+          </div>
+      </div>
+  </div>
+</div>
